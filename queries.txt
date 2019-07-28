@@ -1,0 +1,40 @@
+1."SELECT * FROM admin WHERE name = '$admin_name' AND password = '$password'"
+to check admin user name & password to log in.
+2."SELECT * from event"
+to execute event.
+3."SELECT * from news "
+to execute news.
+4."SELECT * from student_info"
+to student info.
+5."SELECT * from teacher_info"
+to check teacher info.
+6."SELECT * from admin Where a_id='$id'"
+to execute admin info if admin id matches.
+7."INSERT INTO `contact` ( `name`, `email`, `ph`, `msg`) VALUES ( '$nm', '$em', '$ph', '$msg')"
+to insert contact information in the table.
+8."DELETE FROM `student_info` WHERE s_id = '$id'"
+to delete student information  from student table.
+9."SELECT * FROM student_info WHERE s_id = '$id'"
+to execute student info if student id matches.
+10."SELECT * from event order by e_id desc"
+to execute event in descending order  according to date.
+11."INSERT INTO `student_info`( `s_name`, `s_add`, `s_bg`, `dob`, `s_ph`, `email`, `pass`) VALUES ('$name','$add','$bg ','$dob','$phone','$email','$password')"
+to insert student info in the student table.
+12."SELECT * FROM student_info WHERE s_id = '$student_id' AND pass = '$password'"
+to execute student info if student name and password matches.
+13."SELECT * from news order by news_id desc"
+to show news in descending order according to date.
+14."SELECT student_info.s_id, student_info.s_name, courses.c_name, takes.ct1, takes.ct2, takes.ct3, takes.avg, takes.attendance, takes.final, takes.total, takes.grade	FROM  `student_info` ,  `courses` ,  `takes` 	WHERE student_info.s_id='$id' AND	student_info.s_id = takes.s_id	AND takes.c_id = courses.c_id");
+to check student's name,course name,quiz marks,attendence,final marks etc for the required student id.
+15.,"SELECT * from student_info Where s_id='$id'"
+to  execute student info for the required student id. 
+16."SELECT * FROM teacher_info WHERE t_name = '$tnm' AND pass = '$pass'"
+to execute teacher info if teacher name & password matches.
+17."SELECT * from teacher_info Where t_id='$id'"
+to execute teacher info in the database.
+18."DELETE FROM `teacher_info` WHERE t_id = '$id'"
+to delete teacher info from the database.
+19."INSERT INTO `teacher_info`( `t_name`, `t_add`, `t_ph`, `t_email`, `t_salary`, `pass`) VALUES ('$name','$add','$phone','$email','$slry','$password')"
+to insert teacher info in database.
+20."UPDATE `student_info` SET `s_name`='$name',`s_add`='$add',`s_bg`='$bg ',`dob`='$dob',`s_ph`='$phone',`email`='$email',`pass`='$password' WHERE `s_id` ='$id'");
+to update student information.
